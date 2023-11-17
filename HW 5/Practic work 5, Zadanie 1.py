@@ -5,4 +5,4 @@ a = 2
 b = 0
 while b < 20:
     b += 1
-    print(a**b)
+    print(b, a**b)
