@@ -6,12 +6,13 @@
 # Enter two numbers in one line: 55 6
 # Output
 # The sum of numbers is 61, the difference of numbers is 49.
-# import math
-def slozhenie(a, b):
+import math
+def slozh_vich(a, b):
     if a > b:
-        print(a + b, a - b)
+        return a + b, a - b
     else:
-        print(b + a, b - a)
-a = int(input("a: "))
-b = int(input("b: "))
-slozhenie(a, b)
+        return b + a, b - a
+a = int(input("Введите значение а: "))
+b = int(input("Введите значение b: "))
+a, b = slozh_vich(a, b)
+print(a, b)
