@@ -80,11 +80,3 @@ while True:
             balance(valuta)
         else:
             print("Такого действия нет!")
-
-
-
-
-
-
-
-

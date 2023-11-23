@@ -11,4 +11,3 @@ a = int(input("Введите а: "))
 n = int(input("Введите n: "))
 f = power(a, n)
 print(f"Число {a} в степни {n} =", f)
-
