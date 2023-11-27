@@ -17,3 +17,4 @@ while a < konec:
 
 for data in dates_list:
     print(data)
+
