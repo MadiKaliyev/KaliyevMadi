@@ -1,3 +1,4 @@
+import random
 # Домашнее задание №8: Сортировка, поиск, регулярные
 # выражения
 # При выполнении практической работы, основной алгоритм решения задачи должен быть
@@ -25,4 +26,15 @@ a = [1, 4, 2, 3, 4]
 InsertionSort(a)
 print(a)
 
+
+# def InsertionSort(A):
+#     for i in range(len(A)):
+#         for j in range(i, 0, -1):
+#             if A[j] <= A[j - 1]:
+#                 A[j], A[j - 1] = A[j - 1], A[j]
+#
+# b = int(input("Введите число: "))
+# a = [random.randint(1, b)for i in range(b)]
+# InsertionSort(a)
+# print(a)
 
