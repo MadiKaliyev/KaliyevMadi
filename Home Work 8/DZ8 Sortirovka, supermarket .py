@@ -13,15 +13,20 @@
 # Выведите одно число – сумму денег, которую Вася должен взять с собой в супермаркет
 # (минимально возможную).
 
-def skolko_nado(x1,x2):
-   for x2 in range(3):
-
+def skolko_nado(x):
+    x.sort()
+    summa = 0
+    for i in x[::3]:
+        summa += i
+        x2 = sum(x) - summa
+    return x2
 
 
 tovari = int(input("Введите количество товаров: "))
-x1 = []
+ceni = []
 for i in range(tovari):
-    c = int(input(f"Введите цены через пробел:{i + 1} "))
-    x1.append(c)
-x2 = skolko_nado(tovari, x1)
-print(x2)
+    price = int(input(f"Введите цены через пробел:{i + 1} "))
+    ceni.append(price)
+itog = skolko_nado(ceni)
+print(itog)
+
