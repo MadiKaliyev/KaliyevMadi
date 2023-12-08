@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b82e5b22-d421-4300-941a-ea29e893c442" name="Changes" comment="" />
+    <list default="true" id="b82e5b22-d421-4300-941a-ea29e893c442" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Home Work 11/DZ11 zadanie 5. zadacha 5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home Work 11/DZ11 zadanie 5. zadacha 6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home Work 11/DZ11 zadanie 5. zadacha 7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Home Work 11/DZ11 zadanie 5. zadacha 8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home Work 11/DZ 11. zadanie 4 zadacha 1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home Work 11/DZ 11. zadanie 4 zadacha 2.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +33,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2Y198nD3MfDtPzFVLbf8GcAzJxw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
