@@ -5,10 +5,8 @@
 
 from datetime import datetime, timezone
 
-# Время по Гринвичу
-gmt_time = datetime.now(timezone.utc)
-print("Время по Гринвичу:", gmt_time)
+a = datetime.now(timezone.utc)
+print("Время по Гринвичу:", a)
 
-# Местное время
-local_time = datetime.now()
-print("Местное время:", local_time)
+b = datetime.now()
+print("Местное время:", b)

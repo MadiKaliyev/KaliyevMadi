@@ -5,13 +5,13 @@
 
 from datetime import timedelta
 
-difference1 = timedelta(days=5, hours=3, minutes=20, seconds=10)
-difference2 = timedelta(days=2, hours=15, minutes=45, seconds=30)
+a1 = timedelta(days=5, hours=3, minutes=20, seconds=10)
+b1 = timedelta(days=2, hours=15, minutes=45, seconds=30)
 
-total_difference = difference1 + difference2
+c = a1 + b1
 
-days = total_difference.days
-hours, remainder = divmod(total_difference.seconds, 3600)
-minutes, seconds = divmod(remainder, 60)
+days = c.days
+hours, c1 = divmod(c.seconds, 3600)
+minutes, seconds = divmod(c1, 60)
 
 print("Разность дат в виде: {} дней, {} часов, {} минут, {} секунд".format(days, hours, minutes, seconds))
