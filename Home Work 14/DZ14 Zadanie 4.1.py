@@ -27,7 +27,7 @@ for _ in range(100):
     list_of_dicts.append(new_dict)
 
 with open('словари.json', 'w', encoding='utf-8') as file:
-    json.dump(list_of_dicts, file, ensure_ascii=False, indent=4)
+    json.dump(list_of_dicts, file, ensure_ascii=False, indent=1)
 
 with open('словари.json', encoding='utf-8') as fail_json:
   data = json.load(fail_json)
