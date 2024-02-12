@@ -1,39 +1,53 @@
-# а) Загрузите одиночную html страницу с сайта википедии, используя библиотеку
-# requests, затем aiohttp.
-# б) Сохраните оба раза её в файл.
+import os
+import tkinter as tk
+from tkinter import filedialog
+import pandas as pd
 
-import requests
-import aiohttp
-import asyncio
+class Excel:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("Open Exel")
 
-url = 'https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0'
+        self.frame = tk.Frame(self.master)
+        self.frame.pack(padx=10, pady=10)
 
-try:
-    response = requests.get(url)
-    response.raise_for_status()
+        self.label = tk.Label(self.frame, text="Выберите папку:")
+        self.label.grid(row=0, column=0, sticky="w", pady=(0, 10))
 
-    if response.status_code == 200:
-        html = response.text
-        with open('wiki_request.txt', 'w', encoding='utf-8') as file:
-            file.write(html)
-            print(html)
+        self.folder_path = tk.StringVar()
+        self.entry = tk.Entry(self.frame, textvariable=self.folder_path, width=40)
+        self.entry.grid(row=1, column=0, columnspan=2, pady=(0, 10), padx=(0, 5))
 
-except requests.RequestException as e:
-    print(e)
+        self.browse_button = tk.Button(self.frame, text="Обзор", command=self.browse_folder)
+        self.browse_button.grid(row=1, column=2, pady=(0, 10))
 
-async def fetch_html(url):
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url) as response:
-            response.raise_for_status()
-            return await response.text()
+        self.process_button = tk.Button(self.frame, text="Открыть", command=self.process_files)
+        self.process_button.grid(row=2, column=0, columnspan=3, pady=(10, 0))
 
-async def main():
-    url = 'https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0'
-    html = await fetch_html(url)
+    def browse_folder(self):
+        folder_selected = filedialog.askdirectory()
+        self.folder_path.set(folder_selected)
 
-    with open('wiki_asinh.txt', 'w', encoding='utf-8') as file:
-        file.write(html)
-        print(html)
+    def process_files(self):
+        folder_path = self.folder_path.get()
+        if not folder_path:
+            return
+
+        excel_files = [file for file in os.listdir(folder_path) if file.endswith('.xlsx')]
+        total_rows = 0
+
+        for file in excel_files:
+            file_path = os.path.join(folder_path, file)
+            try:
+                df = pd.read_excel(file_path)
+                total_rows += len(df)
+            except Exception as e:
+                print(f"Error reading {file}: {e}")
+
+        result_message = f"Общее количество строк: {total_rows}"
+        tk.messagebox.showinfo("Результат", result_message)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    root = tk.Tk()
+    app = Excel(root)
+    root.mainloop()
