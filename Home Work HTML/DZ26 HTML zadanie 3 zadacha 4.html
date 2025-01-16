@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nested Blocks</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .outer-block {
+            background-color: #faf3f3;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+        }
+        .inner-block {
+            background-color: #e0e0e0;
+            padding: 15px;
+            margin-top: 10px;
+        }
+        .text {
+            color: #333;
+        }
+        .tag-text {
+            background-color: #e1dddd;
+            color: red;
+            padding: 3px;
+            border-radius: 2.5px;
+            line-height: 1.5;
+        }
+        .italic-text {
+            font-style: italic;
+        }
+        .text {
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .text-container {
+            margin-left: 1px;
+        }
+        .shrift {
+            font-weight: bold;
+            color: black;
+            font-size: 60px;
+            text-align: center;
+            display: block;
+        }
+        .line {
+            display: block;
+            width: 100%;
+            border: 1px solid #333;
+            margin: 10px 0;
+        }
+        .shrift2 {
+            font-weight: bold;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            display: block;
+        }
+        .shrift3 {
+            font-weight: bold;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            display: block;
+        }
+        .bold {
+            font-weight: bold;
+            text-align: left;
+            display: block;
+        }
+        .dotted-underline {
+            border-bottom: 1px dotted black;
+            display: inline;
+        }
+        .normal-text {
+            font-weight: normal;
+    </style>
+</head>
+<body>
+    <div class="outer-block">
+        <div class="container">
+        <div class="shrift">HTML Tutorial</div>
+        <hr class="line">
+        <div class="shrift2">What is HTML?</div>
+        <p class="bold text-container">Hypertext Markup Language <span class="dotted-underline bold">(HTML)</span>
+            <span class="normal-text"> is the standard markup language for creating web
+                pages and web<br> applications.
+        <br><br>Web browsers receive HTML documents from a web server or from local storage and render the documents<br>
+        into multimedia web pages. HTML describes the structure of a web page semantically and originally<br>
+        included cues for the appearance of the document.<br><br>
+
+        <span class="dotted-underline"> HTML</span> elements are the building blocks of <span class="dotted-underline"> HTML</span> pages. With <span class="dotted-underline"> HTML</span> constructors, images and other objects<br>
+        such as interactive forms may be embedded into the rendered page. <span class="dotted-underline"> HTML</span> provides a means to create<br>
+        structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links,<br>
+        quotes and other items. <span class="dotted-underline"> HTML</span> elements are delineated by <span class="italic-text">tags</span>, written using angle brackets. Tags such as<br>
+        <span class="tag-text">&lt;img/&gt;</span> and <span class="tag-text">&lt;input/&gt;</span> directly introduce content into the page. Other tags such as <span class="tag-text">&lt;p&gt;</span> surround and<br>
+        provide information about document text and may include other tags as sub-elements. Browsers do not<br>
+        display the <span class="dotted-underline"> HTML</span> tags, but use them to interpret the content of the page.</span></p>
+        <hr class="line">
+        <div class="shrift3">Markup</div>
+        <p class="text-container"> <span class="dotted-underline"> HTML</span> markup of several key components, including those called <span class="italic-text">tags</span> (and their <span class="italic-text">attributes</span>),<br>
+            character-based <span class="italic-text">data types, character references</span> and <span class="italic-text">entity references.</span><span class="dotted-underline"> HTML</span> tags most commonly come in<br>
+            pairs like <span class="tag-text">&lt;h1&gt;</span> and <span class="tag-text">&lt;/h1&gt;</span>, although some represent <span class="italic-text">empty elements</span> and so are unpaired, for example<br>
+            <span class="tag-text">&lt;img&gt;</span>. The first tag in such a pair is the <span class="italic-text">start tag</span>, and the second is the <span class="italic-text">end tag</span> (they are also called <span class="italic-text">opening</span><br>
+            <span class="italic-text">tags</span> and <span class="italic-text">closing tags</span>)<br><br>
+            Another important component is the <span class="dotted-underline">HTML</span><span class="italic-text">document type declaration</span>, which triggers standards mode<br>
+            rendering.<br><br>
+            The following is an example of the classic "Hello, World!" program:<br>
+        <div class="inner-block">
+            <span class="tag-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!DOCTYPE html&gt;</span><br>
+                <span class="tag-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;html&gt;</span><br>
+                <span class="tag-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</span><br>
+                <span class="tag-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</span>This is a title<span class="tag-text">&lt;/title&gt;</span><br>
+                <span class="tag-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</span><br>
+                <span class="tag-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</span><br>
+                <span class="tag-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;</span>Hello World<span class="tag-text">&lt;/p&gt;</span><br>
+                <span class="tag-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</span><br>
+                <span class="tag-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;html&gt;</span><br>
+        </div>
+    </div>
+</body>
+</html>

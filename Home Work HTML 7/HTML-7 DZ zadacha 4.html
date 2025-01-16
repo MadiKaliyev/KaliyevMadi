@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .conteiner {
+            background-color: #4374a5;
+            display: inline-block;
+            width: 700px;
+            height: 100px;
+            position: relative;
+            padding: 50px;
+            left: 100px;
+            top: 100px;
+            color: white;
+            mix-blend-mode: lighten;
+            border-bottom: 2px solid white;
+        }
+
+        .right-content {
+            position: absolute;
+            padding: 50px;
+            right: 300px;
+            top: 0;
+            color: white;
+        }
+
+        .right-content3 {
+            position: absolute;
+            padding: 50px;
+            right: 300px;
+            top: 0;
+            color: white;
+        }
+
+        .right-content2 {
+            position: absolute;
+            padding: 60px;
+            right: 26px;
+            top: 0;
+            color: white;
+        }
+
+        .right-content4 {
+            position: absolute;
+            padding: 50px;
+            left: 40px;
+            top: 0;
+            color: white;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+            background-color: #4374a5;
+            mix-blend-mode: normal;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0;
+            background-blend-mode: multiply;
+            border-radius: 5%;
+        }
+
+        .icon2 {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+            background-color: #4374a5;
+            mix-blend-mode: normal;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0;
+            background-blend-mode: multiply;
+            border-radius: 14%;
+        }
+
+        .icon3 {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+            background-color: #4374a5;
+            mix-blend-mode: normal;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0;
+            background-blend-mode: multiply;
+            border-radius: 25%;
+            cursor: pointer;
+        }
+
+        .line {
+            width: 107%;
+            border: 0.5px solid #d8caca;
+            margin-top: 30px;
+            margin-left: -38px;
+        }
+
+        .text {
+            width: 60%;
+            margin-top: 10px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: 505px;
+            font-size: 10px;
+        }
+
+        .right-content4 a {
+            color: white;
+        }
+
+        .right-content4 a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="right-content4">
+            Home<br>
+            About<br>
+            Gallery<br>
+            <a href="#" class="ssilka">News</a>
+            <div class="line"></div>
+            <div class="text">Copyright &copy; Company 2018 - 2019</div>
+        </div>
+
+        <div class="right-content">
+            Blog<br>
+            FAQ<br>
+            Contacts<br>
+            Privacy & cookies
+        </div>
+
+        <div class="right-content2">
+            <img class="icon" src="https://s1.iconbird.com/ico/0512/BrushedMetalIcons/file1336751403.png">
+            <img class="icon2" src="https://e7.pngegg.com/pngimages/221/598/png-clipart-instagram-instagram-logo-grayscale-app-logo-social-media-internet-icon-social-media.png">
+            <img class="icon3" src="https://img.freepik.com/premium-vector/youtube-background-youtube-icon-social-media-icons-realistic-logo-vector-zaporizhzhia-ukraine-may-10-2021_399089-1047.jpg" onclick="openYouTube()">
+        </div>
+    </div>
+
+    <script>
+        function openYouTube() {
+            alert("YouTube icon clicked!");
+        }
+    </script>
+</body>
+</html>

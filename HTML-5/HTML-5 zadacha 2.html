@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DZ</title>
+    <style>
+        body {
+            background-color: #fbfbfb;
+            display: flex;
+            align-items: flex-start;
+            margin: 0;
+        }
+
+        #content-container {
+            background-color: #dddada;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            margin: 20px;
+            padding-left: 10px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            margin: 20px;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        li {
+            margin: 0px 0;
+            border-radius: 4px;
+            color: black;
+            position: relative;
+            list-style-type: none;
+            background-color: #baddd8;
+        }
+
+        li::before {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #e76d6d;
+            padding: 4px;
+            margin-right: 5px;
+        }
+
+        .word-background {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #ce1818;
+            padding: 4px;
+        }
+        .red-cross1 {
+            background-color: #9ad9ee;
+        }
+        .red-cross2 {
+            background-color: #d3cece;
+        }
+        .red-cross {
+            color: red;
+        }
+        .red-cross3 {
+           background-color: #dddada;
+        }
+    </style>
+</head>
+<body>
+<div id="content-container">
+    <h2>My To Do List</h2>
+    <ul>
+        <li><span>&#x2610;</span> the gym <span class="red-cross">&#x2716;</span></li>
+        <li class="red-cross3"><span>&#x2611;</span><s> Pay bills</s> <span class="red-cross">&#x2716;</span></li>
+        <li><span>&#x2610;</span> Meet John <span class="red-cross">&#x2716;</span></li>
+        <li><span>&#x2610;</span> Buy eggs <span class="red-cross">&#x2716;</span></li>
+        <li class="red-cross3"><span>&#x2611;</span><s> Read a book</s> <span class="red-cross">&#x2716;</span></li>
+        <li><span>&#x2610;</span> Organize office <span class="red-cross">&#x2716;</span></li>
+        <li><span>&#x2610;</span> Eat dinner <span class="red-cross">&#x2716;</span></li>
+        <li><span>&#x2610;</span> Buy apples <span class="red-cross">&#x2716;</span></li>
+        <li><span>&#x2610;</span> Meet George <span class="red-cross">&#x2716;</span></li>
+        <li><span>&#x2610;</span> the cat <span class="red-cross">&#x2716;</span></li>
+        <li class="red-cross3"><span>&#x2611;</span><s> Write a letter</s> <span class="red-cross">&#x2716;</span></li>
+        <li><span>&#x2610;</span> Run 1 km <span class="red-cross">&#x2716;</span></li>
+    </ul>
+</div>
+</body>
+</html>
